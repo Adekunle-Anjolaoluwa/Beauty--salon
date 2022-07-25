@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Beauty Salon</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+     <script>
+      jQuery(function($){
+        var $navbar = $('.header');
+        $(window).scroll(function(event){
+          var $current = $(this).scrollTop();
+          if( $current > 0 ){
+            $navbar.addClass('navbar-color');
+           } else{
+            $navbar.removeClass('navbar.color');
+          }
+        });
+      });
+     </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="img/logo.svg" height="90px" alt="image" />
+        </div>
+        <div class="nav-menu">
+          <ul class="nav-UL">
+            <li class="nav-item"><a href="#home" class="nav-link">home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link" >about</a></li>
+            <li class="nav-item"><a href="#services" class="nav-link">services</a></li>
+            <li class="nav-item"><a href="#package" class="nav-link">package</a></li>
+            <li class="nav-item"><a href="#gallery" class="nav-link">gallery</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="home" id="home">
+      <div class="home-img">
+        <img src="img/home-img.png" height="850px" alt="image" />
+      </div>
+      <div class="home-content">
+        <h3>your big day <br />in style</h3>
+        <p>
+          come and see our bride's corner and take the opportunity to
+          <br />schedule your date.
+        </p>
+        <button class="btn1">
+          <i class="fa-brands fa-whatsapp"></i> schedule your time
+        </button>
+      </div>
+    </div>
+    <div class="about" id="about">
+      <div class="about-title">
+        <h4>our story</h4>
+        <p class="p1">studio hair</p>
+      </div>
+      <div class="about-content">
+        <div class="about-img">
+          <img src="img/about-img.jpg" height="520px" alt="image" />
+        </div>
+        <div class="about-info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam
+          <br />
+          <br />
+          blanditiis commodi
+          <br />
+          <br />
+          ab ipsa doloremque non sint corrupti, dolor rerum
+          <br />
+          <br />
+          aspernatur. Cupiditate porro provident et perferendis repellendus
+          <br />
+          <br />
+          natus totam, tenetur atque.
+        </div>
+      </div>
+    </div>
+    <div class="services" id="services">
+      <div class="services-title">
+        <h4>services</h4>
+        <p class="p2">what we do</p>
+      </div>
+      <div class="services-content">
+        <div class="image1">
+          <div class="manicure">
+            <img
+              src="img/services/manicure.png"
+              height="210px"
+              alt="manicure"
+            />
+            <p>manicure</p>
+          </div>
+          <div class="pedicure">
+            <img
+              src="img/services/pedicure.png"
+              height="210px"
+              alt="pedicure"
+            />
+            <p>pedicure</p>
+          </div>
+          <div class="makeup">
+            <img src="img/services/makeup.png" height="210px" alt="makeup" />
+            <p>makeup</p>
+          </div>
+          <div class="hairstyle">
+            <img src="img/services/hairstyle.png" height="210px" alt="hairstyle"/>
+            <p>hairstyle</p>
+          </div>
+        </div>
+        <div class="image2">
+          <div class="haircut">
+            <img src="img/services/haircut.png" height="210px" alt="haircut" />
+            <p>haircut</p>
+          </div>
+          <div class="eyebrow">
+            <img src="img/services/eyebrow design.png" height="210px" alt="eyebrow" />
+            <p>eyebrow</p>
+          </div>
+          <div class="waxing">
+            <img src="img/services/waxing.png" height="210px" alt="waxing" />
+            <p>waxing</p>
+          </div>
+          <div class="skin cleansing">
+            <img src="img/services/skin cleansing.png" height="210px" alt="skin cleansing"/>
+            <p>skin cleansing</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="package" id="package">
+      <div class="package-title">
+        <h3>promotional packages</h3>
+        <p>for your bride's day</p>
+      </div>
+      <div class="package-content">
+        <div class="bronze">
+          <h1>Bronze</h1>
+          <ul>
+            <li><i class="fa-solid fa-square-check"></i>Hairstyle</li>
+            <li><i class="fa-solid fa-square-check"></i>makeup</li>
+            <li>
+              <i class="fa-solid fa-square-check"></i>nails(<label
+                >traditional french</label>)
+            </li>
+            <li><i class="fa-solid fa-square-xmark"></i>hair removal</li>
+            <li><i class="fa-solid fa-square-xmark"></i>eyebrow design</li>
+            <div class="xmark"><li><i class="fa-solid fa-square-xmark"></i>skin cleansing</li>
+            <li>
+              <i class="fa-solid fa-square-xmark"></i>reserved bridal room
+            </li>
+            <li><i class="fa-solid fa-square-xmark"></i>table fruit</li></div>
+          </ul>
+          <button class="bronze-btn">i want this</button>
+        </div>
+        <div class="silver">
+          <h1>Silver</h1>
+          <ul>
+            <li><i class="fa-solid fa-square-check"></i>hairstyle</li>
+            <li><i class="fa-solid fa-square-check"></i>makeup</li>
+            <li>
+              <i class="fa-solid fa-square-check"></i>nails(<label>traditional french</label>)
+            </li>
+            <li><i class="fa-solid fa-square-check"></i>hair removal</li>
+            <li><i class="fa-solid fa-square-check"></i>eyebrow design</li>
+            <li><i class="fa-solid fa-square-check"></i>skin cleansing</li>
+             <div class="xmark"><li>
+              <i class="fa-solid fa-square-xmark"></i>reserved bridal room
+            </li>
+            <li><i class="fa-solid fa-square-xmark"></i>table fruit</li></div>
+          </ul>
+          <button class="silver-btn">i want this</button>
+        </div>
+        <div class="gold">
+          <h1>Gold</h1>
+          <ul>
+            <li><i class="fa-solid fa-square-check"></i>hairstyle</li>
+            <li><i class="fa-solid fa-square-check"></i>makeup</li>
+            <li>
+              <i class="fa-solid fa-square-check"></i>nails(<label>traditional french</label>)
+            </li>
+            <li><i class="fa-solid fa-square-check"></i>hair removal</li>
+            <li><i class="fa-solid fa-square-check"></i>eyebrow design</li>
+           <div class="xmark"><li><i class="fa-solid fa-square-xmark"></i>skin cleansing</li></div>
+            <li>
+              <i class="fa-solid fa-square-check"></i>reserved bridal room
+            </li>
+             <div class="xmark"><li><i class="fa-solid fa-square-xmark"></i>table fruit</li></div>
+          </ul>
+          <button class="gold-btn">i want this</button>
+        </div>
+        <div class="diamond">
+          <h1>Diamond</h1>
+          <ul>
+            <li><i class="fa-solid fa-square-check"></i>hairstyle</li>
+            <li><i class="fa-solid fa-square-check"></i>makeup</li>
+            <li>
+              <i class="fa-solid fa-square-check"></i>nails(<label>traditional french</label>)
+            </li>
+            <li><i class="fa-solid fa-square-check"></i>hair removal</li>
+            <li><i class="fa-solid fa-square-check"></i>eyebrow design</li>
+            <li><i class="fa-solid fa-square-check"></i>skin cleansing</li>
+            <li>
+              <i class="fa-solid fa-square-check"></i>reserved bridal room
+            </li>
+            <li><i class="fa-solid fa-square-check"></i>table fruit</li>
+          </ul>
+          <button class="diamond-btn">i want this</button>
+        </div>
+      </div>
+    </div>
+    <div class="gallery" id="gallery">
+      <div class="gallery-title">
+        <h3>gallery</h3>
+        <p>the princesses of our instagram</p>
+      </div>
+      <div class="gallery-background">
+        <div class="gallery-content">
+          <div class="image3">
+            <img src="img/img-insta/photo1.png" height="400px" alt="image" />
+            <img src="img/img-insta/photo2.png" height="400px" alt="image" />
+            <img src="img/img-insta/photo3.png" height="400px" alt="image" />
+            <img src="img/img-insta/photo4.png" height="400px" alt="image" />
+          </div>
+          <div class="image4">
+            <img src="img/img-insta/photo5.png" height="400px" alt="image" />
+            <img src="img/img-insta/photo6.png" height="400px" alt="image" />
+            <img src="img/img-insta/photo7.png" height="400px" alt="image" />
+            <img src="img/img-insta/photo8.png" height="400px" alt="image" />
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="see-more btn"><button>see more</button> </div>
+      <div class="testimonials">
+        <div class="testimonials-title">
+          <h3>testimonials</h3>
+          <p>see what our customers have to say</p>
+        </div>
+        <div class="testimonials-content">
+          <div class="calaena">
+            <img src="img/testimonials/testimonials1.png" height="100px" width="110px" alt="image">
+            <h4>calaena</h4>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="calaena-info">
+              Lorem ipsum dolor sit 
+            <br> amet consectetur 
+            <br> adipisicing elit. 
+            <br> Facilis ipsum quam  
+            <br> accusantium unde dolorem.
+            </div> 
+         </div>
+
+        <div class="aelin">
+            <img src="img/testimonials/testimonials2.png" height="100px" width="110px" alt="image">
+            <h4>aelin</h4>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="aelin-info">
+              Lorem ipsum dolor sit 
+            <br> amet consectetur 
+            <br> adipisicing elit. 
+            <br> Facilis ipsum quam  
+            <br> accusantium unde dolorem.
+            </div> 
+         </div>
+         <div class="luciana">
+          <img src="img/testimonials/testimonials1.png" height="100px" width="110px" alt="image">
+          <h4>luciana</h4>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="luciana-info">
+            Lorem ipsum dolor sit 
+          <br> amet consectetur 
+          <br> adipisicing elit. 
+          <br> Facilis ipsum quam  
+          <br> accusantium unde dolorem.
+          </div> 
+       </div>
+       <div class="patricia">
+        <img src="img/testimonials/testimonials2.png" height="100px" width="110px" alt="image">
+        <h4>patricia</h4>
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="patricia-info">
+          Lorem ipsum dolor sit 
+        <br> amet consectetur 
+        <br> adipisicing elit. 
+        <br> Facilis ipsum quam  
+        <br> accusantium unde dolorem.
+        </div> 
+     </div>
+      </div>
+      <div class="contact" id="contact">
+        <div class="contact-logo">
+          <img src="img/logo.svg" height="90px" alt="image">
+          <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+           <i class="fa-brands fa-instagram"></i>
+           <i class="fa-brands fa-twitter"></i>
+                </div>
+        </div>
+        <div class="contact-address">
+        <h3>address</h3>
+        <p>Alharm-St 26 <br>Giza - Egypt</p>
+       </div> 
+       <div class="contact-opening">
+        <h3>we opened</h3>
+        <p>Monday To Friday <br>From 09:00 To 18:00</p>
+       </div>
+       <div class="contact-number">
+        <h3>contact</h3>
+        <p>(20)1111-222-333 <br>(20)4444-555-666</p>
+        </div>
+      </div>
+      <footer>
+        <br>
+       <br>
+       <br>
+       <hr>
+       <h4>&copy all rights reserved</h4>
+       <p>created by web trend</p>
+      </footer>
+    <script src="nav.js" async defer></script>
+  </body>
+</html>
